@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicios JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header/Nav mejorado -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ejercicios JavaScript</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-5">
+            <h1 class="text-center mb-5">Problemas Matemáticos</h1>
+           
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <!-- Tarjeta de ejemplo -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm ">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ejercicio 6 </h5>
+                            <input class="form-control" type="number" required name="num1" id="num1">
+                            <p id="respuesta_ej1">evaluar z=4.3</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <button onclick="ej1()" class="btn btn-primary btn-sm">Inciso A</button>
+                            </div>
+                             <input class="form-control" type="number" required name="num2" id="num2">
+                            <p id="respuesta_ej2">evaluar z=4.3</p>
+                            <div class="d-flex justify-content-center">
+                                <button onclick="ej2()" class="btn btn-primary btn-sm">Inciso B</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repite este bloque para los demás ejercicios cambiando IDs y funciones -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ejercicio 7</h5>
+                             <input class="form-control" type="number" required name="num3" id="num3">
+                            <p id="respuesta_ej3">definir como z=3.2</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <button onclick="ej3()" class="btn btn-primary btn-sm">Inciso A</button>
+                            </div>
+                             <input class="form-control" type="number" required name="num4" id="num4">
+                            <p id="respuesta_ej4">definir como z=3.2</p>
+                            <div class="d-flex justify-content-center">
+                                <button onclick="ej4()" class="btn btn-primary btn-sm">Inciso B</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejercicio 8 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ejercicio 8</h5>
+                               <input class="form-control" type="number" required name="num5" id="num5">
+                            <p id="respuesta_ej5">x=6.5</p>
+                               <input class="form-control" type="number" required name="num6" id="num6">
+                            <p id="respuesta_ej5_1">y =3.8  </p>
+                            <div class="d-flex justify-content-center">
+                                <button onclick="ej5()" class="btn btn-primary btn-sm">  Incisos A y B</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejercicio 9 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ejercicio 9</h5>
+                             <input class="form-control" type="number" required name="num7" id="num7">
+                            <p id="respuesta_ej6"></p>
+                             <input class="form-control" type="number" required name="num8" id="num8">
+                            <p id="respuesta_ej6_1"></p>
+                            <div class="d-flex justify-content-center">
+                                <button onclick="ej6()" class="btn btn-primary btn-sm">Incisos A y B</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejercicio 10 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ejercicio 10</h5>
+                            <p id="respuesta_ej7"></p>
+                            <p id="respuesta_ej7_1"></p>
+                            <div class="d-flex justify-content-center">
+                                <button onclick="ej7()" class="btn btn-primary btn-sm">Incisos A y B</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer mejorado -->
+    <footer class="bg-light text-black text-center py-4 mt-5">
+        <div class="container">
+            <h5 class="mb-1">Ejercicio javascript DOM - Práctica de UMSA</h5>
+             <h5 class="mb-1">Programacion Web 1 </h5>
+            <p class="mb-0">Todos los derechos reservados &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/operacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
